@@ -1,0 +1,40 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tailwind</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="../dist/output.css" />
+    </head>
+    <body class="bg-gradient-to-br from-grad-from to-grad-to">
+        <div class="page-wrapper sm:bg-pattern sm:h-full sm:grid sm:grid-cols-5 sm:grid-rows-5">
+            <div class="py-8 pl-8 nav sm:p-28 md:pl-20 lg:pt-24 lg sm:col-start-1 sm:col-end-4 sm:row-start-1 sm:row-end-2">
+                <div class="logo w-72">
+                    <img src="./images/logo.svg" alt="" />
+                </div>
+            </div>
+            <div class="w-full overflow-hidden hero-img h-72 sm:h-full sm:col-start-4 sm:col-end-6 sm:row-start-1 sm:row-end-6">
+                <img class="object-cover object-right-top w-full h-full sm:object-center" src="./images/hero-desktop.jpg" alt="" />
+            </div>
+            <div class="text-center content font-josefin sm:text-left mt-14 sm:pl-28 md:pl-20 lg:pt-8 sm:pt-10 md:pr-20 sm:col-start-1 sm:col-end-4 sm:row-start-2 sm:row-end-6">
+				<h1 class="sm:tracking-widest lg:leading-[1.2] text-6xl lg:text-[5rem] font-light text-red-desaturated lg:pr-28 w-[10ch] ">WE'RE <span class="font-semibold text-black">COMING SOON</span></h1>
+
+                <p class="mt-5 sm:my-8 px-5 lg:leading-9 sm:px-0 sm:pl-0 lg:text-xl lg:w-[40ch] text-red-desaturated">
+                    Hello fellow shoppers! We're currently building our new
+                    fashion store. Add your email below to stay up-to-date with
+                    announcements and our launch deals.
+                </p>
+                <div class="relative flex justify-center w-full mt-5 input-email sm:justify-start lg:mt-11">
+                    <input class="px-7 py-3.5 w-[80%] text-red-soft rounded-full border-2 border-red-desaturated" type="email" placeholder="Email Address"/>
+					<button class="bg-red-soft px-7 sm:px-9 py-[1.1rem] cursor-pointer hover:scale-110 hover:shadow-2xl rounded-full absolute right-0 -translate-x-10 lg:-translate-x-28 md:-translate-x-10 sm:-translate-x-16 translate-y-[0.5px] shadow-sm"><img src="./images/icon-arrow.svg" alt=""></button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
